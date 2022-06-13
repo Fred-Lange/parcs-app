@@ -1,0 +1,2 @@
+class ParcsController < ApplicationController
+end
