@@ -1,0 +1,9 @@
+<div class="container" class="flexArea" style="display: flex; flex-direction: column; justify-content: space-between; height:500px;width:800px">
+<h1>Index of all parcs</h1>
+<ul>
+  <% @parcs.each do |parc| %>
+    <li><%= parc.name %> <%= link_to "Voir détail", parc_path(parc), class: "btn btn-primary"%>
+</li>
+  <% end %>
+</ul>
+</div>

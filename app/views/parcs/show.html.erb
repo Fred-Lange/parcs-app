@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Show for each parc</h1>
+  <br>
+  <h2><%= @parc.name %></h2>
+  <p><%= @parc.note %></p>
+  <p><%= @parc.age %></p>
+  <p><%= @parc.equipment %></p>
+  <p><%= @parc.water %></p>
+  <p><%= @parc.wc %></p>
+  <p><%= @parc.address %></p>
+  <p><%= @parc.coordinates %></p>
+  <br>
+
+  <%= link_to 'Retour', parcs_path, class: "btn btn-secondary" %>
+  <%= link_to 'Laisser un commentaire', new_parc_review_path(@parc), class: "btn btn-secondary"  %>
+
+</div>
