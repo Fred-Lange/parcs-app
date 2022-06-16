@@ -1,2 +1,13 @@
 <h1>Post#new</h1>
 <p>Find me in app/views/post/new.html.erb</p>
+
+<div class="container">
+  <h1>Create a Post for a Parc</h1>
+
+  <%= simple_form_for [ @parc, @post ] do |f| %>
+    <%= f.input :content %>
+    <%= f.input :rating, collection: 0..5 %>
+    <%= f.submit "Envoyer le commentaire", class: "btn btn-primary" %>
+  <% end %>
+
+</div>
